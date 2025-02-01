@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City Development - Blog Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ... existing styles ... */
+    </style>
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-pattern"></div>
+    <div class="dot-pattern"></div>
+
+    <!-- Navbar -->
+    <header class="fixed w-full z-50">
+        <nav class="bg-white/80 backdrop-blur-md border-b border-gray-200 px-4 lg:px-6 py-4">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a href="index.html" class="flex items-center">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap">
+                        Port<span class="text-blue-600">folio.</span>
+                    </span>
+                </a>
+                
+                <!-- Mobile menu button -->
+                <div class="flex lg:hidden items-center">
+                    <button type="button" class="mobile-menu-button inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center lg:w-auto" id="desktop-menu">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="index.html" class="block py-2 pr-4 pl-3 text-gray-700 hover:text-blue-600 transition-colors duration-200 lg:p-0">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="block py-2 pr-4 pl-3 text-gray-700 hover:text-blue-600 transition-colors duration-200 lg:p-0">About</a>
+                        </li>
+                        <li>
+                            <a href="blog.html" class="block py-2 pr-4 pl-3 text-blue-600 lg:p-0" aria-current="page">Blog</a>
+                        </li>
+                        <li>
+                            <a href="proojects.html" class="block py-2 pr-4 pl-3 text-gray-700 hover:text-blue-600 transition-colors duration-200 lg:p-0">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div class="hidden w-full" id="mobile-menu">
+                    <ul class="flex flex-col mt-4 font-medium">
+                        <li>
+                            <a href="index.html" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 rounded-lg">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 rounded-lg">About</a>
+                        </li>
+                        <li>
+                            <a href="blog.html" class="block py-2 pr-4 pl-3 text-blue-600 bg-blue-50 rounded-lg" aria-current="page">Blog</a>
+                        </li>
+                        <li>
+                            <a href="proojects.html" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 rounded-lg">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Article Header -->
+    <section class="pt-32 pb-10 px-4">
+        <div class="max-w-4xl mx-auto">
+            <!-- Category & Date -->
+            <div class="flex items-center gap-4 mb-6">
+                <span class="bg-blue-600 text-white px-4 py-1 rounded-full text-sm">projects terbaru</span>
+                <span class="text-gray-500"> <span>FEBUARI 2, 2025</span>
+            </div>
+
+            <!-- Title -->
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                Kerangka kerja terbaru yang anda perlu tahu 
+            </h1>
+
+            <!-- Authyangor Info -->
+            <div class="flex items-center gap-4 mb-8">
+                <img src="author-avatar.jpg" alt="Author" class="w-12 h-12 rounded-full">
+                <div>
+                    <h3 class="font-medium text-gray-800">John Doe</h3>
+                    <p class="text-gray-500">Urban Planner & Technology Enthusiast</p>
+                </div>
+            </div>
+
+            <!-- Featured Image -->
+            <div class="rounded-2xl overflow-hidden mb-8">
+                <img src="urban-20230908160039991163.jpg" 
+                     alt="Smart City Development" 
+                     class="w-full h-[400px] object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="py-10 px-4">
+        <div class="max-w-3xl mx-auto">
+            <!-- Article Text -->
+            <div class="prose prose-lg max-w-none">
+                <h2>Introduction</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                <h2>The Importance of Smart Cities</h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <!-- Code Block Example -->
+                <pre class="bg-gray-900 text-white p-4 rounded-lg">
+                    <code>
+function smartCity() {
+    return "Future of urban living";
+}
+                    </code>
+                </pre>
+
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Smart Transportation</li>
+                    <li>Energy Efficiency</li>
+                    <li>Digital Infrastructure</li>
+                    <li>Environmental Monitoring</li>
+                </ul>
+
+                <!-- Image within content -->
+                <figure class="my-8">
+                    <img src="smart-city-diagram.jpg" alt="Smart City Diagram" class="rounded-lg">
+                    <figcaption class="text-center text-gray-500 mt-2">Smart City Infrastructure Diagram</figcaption>
+                </figure>
+            </div>
+
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2 mt-12">
+                <span class="px-4 py-1 bg-gray-100 rounded-full text-gray-700 text-sm">#SmartCity</span>
+                <span class="px-4 py-1 bg-gray-100 rounded-full text-gray-700 text-sm">#UrbanPlanning</span>
+                <span class="px-4 py-1 bg-gray-100 rounded-full text-gray-700 text-sm">#Technology</span>
+            </div>
+
+            <!-- Share Buttons -->
+            <div class="flex items-center gap-4 mt-8 pt-8 border-t">
+                <span class="text-gray-700 font-medium">Share this article:</span>
+                <a href="#" class="text-blue-600 hover:text-blue-800">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="text-blue-600 hover:text-blue-800">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Related Posts -->
+    <section class="py-12 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8">Related Articles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Related Post Cards (similar to blog listing but simplified) -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                    // ... related post content ...
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="py-12 px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8">Comments</h2>
+            
+            <!-- Comment Form -->
+            <form class="mb-12">
+                <textarea 
+                    placeholder="Leave a comment..." 
+                    class="w-full p-4 rounded-lg border focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    rows="4"
+                ></textarea>
+                <button class="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                    Post Comment
+                </button>
+            </form>
+
+            <!-- Comments List -->
+            <div class="space-y-8">
+                <!-- Single Comment -->
+                <div class="flex gap-4">
+                    <img src="commenter-avatar.jpg" alt="Commenter" class="w-10 h-10 rounded-full">
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <h4 class="font-medium text-gray-800">Jane Smith</h4>
+                            <span class="text-gray-500 text-sm">2 days ago</span>
+                        </div>
+                        <p class="text-gray-600">Great article! Very informative and well-written.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 bg-opacity-95 text-white py-12 relative mt-20">
+        // ... existing footer code ...
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
